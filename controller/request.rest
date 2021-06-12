@@ -1,0 +1,13 @@
+//to use it is like postman is used to make http requests inside VSCODE and is help full tosee when you get or post something
+//send a get request
+//GET http://127.0.0.1:8080/register
+
+###
+
+
+//POST http://127.0.0.1:8080/register 
+//Content-Type: application/json
+
+//{
+  //  "name":"Elyin"
+//}
