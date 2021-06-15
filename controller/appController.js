@@ -55,7 +55,7 @@ module.exports = (app)=>{
            //if the username is correct we create a session and with that session we can render the next page 
               request.session.name = username;
               //in this case we just sent  a message saying that the loging is fine
-               response.end('loggin is good')
+               response.redirect('/register');
          }else{
            //else send an error message
           response.end('username is invalid')
