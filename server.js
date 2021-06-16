@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
+const  getController  = require('./controller/getController');
+const postController = require('./controller/postController');
 
-
-
-const appController = require('./controller/appController');
-const mainController = require('./controller/mainControler');
-app.use(express.json());
 
 app.set('view engine' , 'ejs');
-mainController(app);
-app.listen(8080 , ()=>{ console.log('server has started in port 8080')})
+app.use(express.json());
+
+getController(app);
+postController(app);
+app.listen(8000 , ()=>{ console.log('server has started in port 8000')})
